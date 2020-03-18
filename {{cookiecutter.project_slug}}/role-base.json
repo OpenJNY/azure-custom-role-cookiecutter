@@ -1,0 +1,15 @@
+{
+    "Name": "{{cookiecutter.role_name}}",
+    "Id": null,
+    "Description": "{{cookiecutter.role_desc}}",
+    "IsCustom": true,
+    "Actions": [
+        "Microsoft.Support/*"
+    ],
+    "NotActions": [],
+    "DataActions": [],
+    "NotDataActions": [],
+    "AssignableScopes": [
+        "/subscriptions/{{cookiecutter.subscription_id}}"
+    ]
+}

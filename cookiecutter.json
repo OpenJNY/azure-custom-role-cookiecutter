@@ -1,0 +1,11 @@
+{
+    "project_name": "project name",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "lang": [
+        "en-us",
+        "ja-jp"
+    ],
+    "subscription_id": "your subscrition id",
+    "role_name": "your custom role name",
+    "role_desc": "description for your custome role"
+}
