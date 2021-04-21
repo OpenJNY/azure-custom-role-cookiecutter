@@ -6,7 +6,7 @@ A cookiecutter template for creating a custom role for Azure resource.
 
 ```bash
 $ pip install cookiecutter
-$ coockiecutter https://github.com/openjny/azure-custom-role-cookiecutter
+$ cookiecutter https://github.com/openjny/azure-custom-role-cookiecutter
 
 project_name [project name]: bastion reader     
 project_slug [bastion_reader]: 
