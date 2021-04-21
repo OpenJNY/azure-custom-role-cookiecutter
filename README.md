@@ -24,6 +24,8 @@ $ cd bastion_reader
 ## TODO
 
 - Support Azure CLI senario
+- Japanese version project
+- Support multiple `AssignableScopes` or types other than `subscription`.
 
 ## References
 
