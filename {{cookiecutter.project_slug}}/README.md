@@ -10,13 +10,13 @@ You can create your Custom Role according to the following steps:
 - **Step 4 :** Customize `do_action.ps1` and make sure it will perform your desired operation. Note that your goal is to execute `.\do_action.ps1` with the above service principal without any error.
 - **Step 5:** Open a new PowerShell session for SP, which is referred to as [SP Session].
 - **Setp 6:** Repeat these sub steps until the role definition is completed:
-    - **Step 6.1 [SP Session]:** Run `.\login_sp.ps1`. The purpose is not only the first login, but also to reflect the current custom role definitions in the SP.
+    - **Step 6.1 [SP Session]:** Run `.\6_login_sp.ps1`. The purpose is not only the first login, but also to reflect the current custom role definitions in the SP.
     - **Step 6.2 [SP Session]:** Run `.\do_action.ps1`:
         - If an error regarding authz occurs, edit parameters (e.g. `Actions`) in `role.json` according to the error message.
         - If an other error occurs, please take a look at your code in `do_action.ps` and make sure it works correctly.
         - Otherwise, your custom role has been completed! Move to **Step 7**.
-    - **Step 7.3 [ADMIN Session]:** Run `.\update_role.ps1` to update the definition of Custom Role. You can use `get_role.ps1` to check the current definition on Azure platform, as sometimes it takes a few mins to reflect.
-- **Step 7 [ADMIN Session]:** Run `.\cleanup.ps` to clean up resources. Now `role.json` is your desired Custom Role definition.
+    - **Step 6.3 [ADMIN Session]:** Run `.\6_update_role.ps1` to update the definition of Custom Role. You can use `.\6_get_role.ps1` to check the current definition on Azure platform, as sometimes it takes a few mins to reflect.
+- **Step 7 [ADMIN Session]:** Run `.\7_cleanup.ps` to clean up resources. Now `role.json` is your desired Custom Role definition.
 
 ## Cheatsheets
 
